@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Digg Header by CSS-Tricks</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<script type="text/javascript" src="JavaScript/jquery.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		   $("#zone-bar li em").hover(function() {
+		   		var hidden = $(this).parents("li").children("ul").is(":hidden");
+		   		
+				$("#zone-bar>ul>li>ul").hide()        
+			   	$("#zone-bar>ul>li>a").removeClass();
+			   		
+			   	if (hidden) {
+			   		$(this)
+				   		.parents("li").children("ul").toggle()
+				   		.parents("li").children("a").addClass("zoneCur");
+				   	} 
+			   });
+		});
+	</script>
+	
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+		
+		<div id="zone-bar">
+			<ul>
+				<li>
+					<a href="AdminPage.jsp"><span>
+						Home &nbsp;
+					</span></a>
+				</li>
+				<li>
+					<a href="ManageUser.jsp"><span>
+						Manage User &nbsp;
+						<em class="opener-world">
+							<img src="Images/images/zonebar-downarrow.png" alt="dropdown" />
+						</em>
+					</span></a>
+					<ul class="worldsublist">
+						<li><a href="AddUser.jsp">Add User</a></li>
+						<li><a href="ModifyAdmin.jsp">Modify Admin</a></li>
+						<li><a href="ModifyUser.jsp">Modify User</a></li>
+						<li><a href="DeleteUser.jsp">Delete User</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="ManageOrganization.jsp"><span>
+						Manage
+						Organization &nbsp;
+						<em class="opener-science">
+							<img src="Images/images/zonebar-downarrow.png" alt="dropdown" />
+						</em>
+					</span></a>
+					<ul class="sciencesublist">
+						<li><a href="AddOrganization.jsp">Add Organization</a></li>
+						<li><a href="ModifyOrganization.jsp">Modify Organization</a>
+						</li>
+						<li><a href="DeleteOrganization.jsp">Delete Organization</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ManageSubject.jsp"><span>
+						Manage Subject &nbsp;
+						<em class="opener-gaming">
+							<img src="Images/images/zonebar-downarrow.png" alt="dropdown" />
+						</em>
+					</span></a>
+					<ul class="gamingsublist">
+						<li><a href="AddSubject.jsp">Add Subject</a></li>
+						<li><a href="ModifySubject.jsp">Modify Subject</a></li>
+						<li><a href="DeleteSubject.jsp">Delete Subject</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#url"><span>
+						Manage
+						Question &nbsp;
+						<em class="opener-lifestyle">
+							<img src="Images/images/zonebar-downarrow.png" alt="dropdown" />
+						</em>
+					</span></a>
+					<ul class="lifestylesublist">
+						<li><a href="AddQuestions.jsp">Add Question</a></li>
+						<li><a href="ModifyQuestions.jsp">Modify Question</a></li>
+						<li><a href="DeleteQuestions.jsp">Delete Question</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="FilterResult.jsp"><span>
+						Filter Result &nbsp;
+					</span></a>
+				</li>
+				<li>
+					<a href="#" onclick="logout()"><span>
+						Logout &nbsp;
+					</span></a>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	<div
+		style="border: 1px solid gray; background-color: #ccccd0;position:fixed;bottom:5px;width: 100%; text-align: center;">©
+		2012 Aspire Systems
+	</div>
+</body>
+
+</html>

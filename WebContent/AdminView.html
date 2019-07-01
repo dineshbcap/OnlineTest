@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="CSS/AdminViewStyle.css" type="text/css" />
+</head>
+<body>
+	<script src="JavaScript/jquery.js"></script>
+	<script src="JavaScript/AdminViewJQuery.js"></script>
+	<script type="text/javascript" src="JavaScript/CheckValues.js"></script>
+
+	<div class="examples">
+
+		<div id="menu">
+			<ul class="level1">
+				<li class="level1-li"><a class="level1-a" href="AdminPage.jsp">Home</a>
+				</li>
+				<li class="level1-li"><a class="level1-a drop"
+					href="ManageUser.jsp">&nbsp;&nbsp;&nbsp;Manage User </a>
+					<ul class="level2">
+						<li><a href="AddUser.jsp">Add User</a></li>
+						<li><a href="ModifyAdmin.jsp">Modify Admin</a></li>
+						<li><a href="ModifyUser.jsp">Modify User</a></li>
+						<li><a href="DeleteUser.jsp">Delete User</a></li>
+					</ul>
+				</li>
+				<li class="level1-li"><a class="level1-a drop"
+					href="ManageOrganization.jsp">&nbsp;&nbsp;&nbsp;Manage
+						Organization </a>
+					<ul class="level2">
+						<li><a href="AddOrganization.jsp">Add Organization</a></li>
+						<li><a href="ModifyOrganization.jsp">Modify Organization</a>
+						</li>
+						<li><a href="DeleteOrganization.jsp">Delete Organization</a>
+						</li>
+					</ul></li>
+				<li class="level1-li"><a class="level1-a drop"
+					href="ManageSubject.jsp">&nbsp;&nbsp;&nbsp;Manage Subject</a>
+					<ul class="level2">
+						<li><a href="AddSubject.jsp">Add Subject</a></li>
+						<li><a href="ModifySubject.jsp">Modify Subject</a></li>
+						<li><a href="DeleteSubject.jsp">Delete Subject</a></li>
+					</ul></li>
+				<li class="level1-li"><a class="level1-a drop" href="#url">Manage
+						Question<!--[if gte IE 7]><!--> </a>
+					<ul class="level2">
+						<li><a href="AddQuestions.jsp">Add Question</a></li>
+						<li><a href="ModifyQuestions.jsp">Modify Question</a></li>
+						<li><a href="DeleteQuestions.jsp">Delete Question</a></li>
+					</ul></li>
+				<li class="level1-li"><a class="level1-a"
+					href="FilterResult.jsp">&nbsp;&nbsp;&nbsp;&nbsp;Filter Result</a></li>
+				<li class="level1-li"><a class="level1-a" href="#url"
+					onclick="logout()">&nbsp;&nbsp;&nbsp;&nbsp;Logout</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<div style="clear: both"></div>
+	</div>
+	<div
+		style="border: 1px solid gray; background-color: #ccccd0;position:fixed;bottom:5px;width: 100%; text-align: center;">©
+		2012 Aspire Systems
+	</div>
+</body>
+</html>

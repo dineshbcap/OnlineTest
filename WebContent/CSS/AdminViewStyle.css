@@ -1,0 +1,34 @@
+#menu{
+	margin:0;
+	border:0;
+	margin-top: -30px;
+}
+#menu ul {width:100%; padding:15px; list-style:none; white-space:nowrap; text-align:left; background:#ccccd0; border:1px solid #333; border-color:#eee #555 #222 #fff;}
+#menu ul {display:inline-block;} 
+
+#menu li {margin:0px; padding:0; list-style:none; text-align: left;}
+#menu li {display:inline-block; display:inline;}
+#menu ul ul {position:absolute; left:-9999px;text-align: left;margin-top: 3px;}
+
+#menu ul.level1 {margin:50px auto;}
+#menu ul.level1 li.level1-li {float:left; display:block; position:relative;}
+
+#menu a {display:block; font:medium 12px verdana,arial,sans-serif; color:#000; line-height:25px; text-decoration:none;padding:0 27px;}
+#menu ul.level1 li.level1-li a.level1-a {float:left;}
+
+#menu ul li:hover > ul {visibility:visible; left:0; top:21px;}
+#menu ul ul li:hover > ul {visibility:visible; left:100%; top:auto; margin-top:-25px; margin-left:-4px;}
+
+#menu a:hover ul {left:0; top:23px;}
+
+#menu a:hover a:hover ul, 
+#menu a:hover a:hover a:hover ul {left:100%; visibility:visible;}
+
+#menu a:hover ul ul, 
+#menu a:hover a:hover ul ul {left:-9999px;}
+
+#menu li a.drop {background:transparent url(../Images/images/white-down.gif) no-repeat right center;}
+
+#menu li a:hover,
+#menu li:hover > a,
+#menu ul li:hover > a.fly {color:#c60; background-color:#c0c0c8;}
